@@ -1,214 +1,194 @@
 
-
-*{
-    margin: 0;
-    padding: 0;
-}
-:Root{
-    --navbar-height : 59px;
-
-}
-#navbar {
-    display: flex;
-    align-items: center;
-    position: relative;
-    top: 0px;
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    :Root{
+        --navbar-height : 59px;
     
-}
-#navbar ::before{
-    content: "";
-    background-color: black;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height:100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.5;
-}
-
-
-#logo{
-    margin: 10px 34x;
-
-}
-#logo img{
-    height: 69px;
-    margin: 3px 6px;
-
-}
-#navbar{
-    position: absolute;
-}
-#navbar ul{
-    display: flex;
-
-}
-
-
-#navbar ul li{
-    color: aqua;
-    list-style: none;
-    font-size:  1.1rem ; 
-    text-decoration: none;
-}
-#navbar ul li a{
-    color: white;
-    display: block;
-    padding: 3px 22px;
-    border-radius: 20px;
-    text-decoration: none;
-}
+    }
+    #navbar {
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 0px;
+        
+    }
+    #navbar ::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height:100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.5;
+    }
     
-#navbar ul li a:hover{
-    color: black;
-    background-color: white;
+    #logo{
+        margin: 10px 34x;
     
-}
-    /* home section*/
-#home{
-    display: flex;
+    }
+    #logo img{
+        height: 69px;
+        margin: 3px 6px;
+    
+    }
+    #navbar{
+        position: absolute;
+    }
+    #navbar ul{
+        display: flex;
+    
+    }
+    
+    #navbar ul li{
+        color: aqua;
+        list-style: none;
+        font-size:  1.1rem ; 
+        text-decoration: none;
+    }
+    #navbar ul li a{
+        color: white;
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+        
+    #navbar ul li a:hover{
+        color: black;
+        background-color: white;
+        
+    }
+        /* home section*/
+    #home{
+        display: flex;
+        flex-direction: column;
+       
+        padding: 5px 200px;
+        height: 340px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    #home ::before{
+        content: "";
+        background: url('./bg.jpg') no-repeat center center/cover;
+        
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height:60%;
+        width: 110%;
+        z-index: -1;
+        opacity: 0.89;
+    }
+    #home h1{
+        color: black;
+        text-align: center;
+        
+    }
+    #home p{
+        color: rgb(36, 1, 1);
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    
+    /*services section*/
+    #services{
+        
+        display: flex;
+        color: black;
+        margin: 31px;
+        border-image: auto;
+    }
+    
+    #services.box{
+        
+        padding: 34px ;
+        margin: 3px 6px;
+        border:2px solid  rgb(97, 4, 4);
+        border-radius: 28px solid rgb(99, 3, 3);
+        background:  #dd8f8f;
+        border-image: auto;
+    }
+    #services.box img{
+        height: 160;
+       
+        margin: auto;
+        display: block;
+        border-image: solid;
+    }
+    #services{}
+    #services{}
+    #services{}
+    
+
+/*Designing of Contact Us*/
+#ContactUs{
+    
+    margin: 31px;
+    width: 105vw;
+    height:90vh;
+    display:flex;
     flex-direction: column;
-    
-    padding: 5px 200px;
-    height: 350px;
-    justify-content: center;
     align-items: center;
+    background-color: gray;
+    font-size: 0.89rem;
+    background: url('../cnt6.jpg') no-repeat center center/cover;
+    border-style: solid; 
 }
-#home ::before{
-    content: "";
-    background: url('../bg.jpg') no-repeat center center/cover;
-    
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height:60%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.89;
-    
-
+.form-shape input, .form-shape select, .form-shape textarea{
+   width: 92%;
+   padding: 0.5rem;
 }
-#home h1{
-    color: black;
-    text-align: center;
-    
-}
-#home p{
-    color: rgb(36, 1, 1);
-    text-align: center;
-    font-size: 1.6rem;
-
-
-}
-
-/*services section*/
-#services{
-    margin: 34px;
-    display: flex;
-    color: black;
-
-}
-
-
-#services.box{
-    
-    padding: 34px ;
-    margin: 3px 6px;
-    border:2px solid  rgb(97, 4, 4);
-    border-radius: 28px solid rgb(99, 3, 3);
-    background:  #dd8f8f;
-}
-#services.box img{
-    height: 160;
-    margin: auto;
-    display: block;
-}
-#services{}
-#services{}
-#services{}
-
-/*contact section*/
-#contact{
-    position: relative;
-}
-
-#contact ::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.7;
-    background:url('../1213.jpg') no-repeat center center/cover;
-
-}
-#contact-box{
-    display: flex;
-    justify-content: center;
-    align:center;
-    align-items: center;
-    padding-bottom: 34px;
-}
-#contact-box input,
-#contact-box textarea{
-    width: 100%;
-    padding:  0.5rem;
-    align-items: center;
-    border-radius: 9px;
-    font: 1.2rem;
-
-}
-#contact-box form{
-    width: 50%;
-    align-items: center;
-
-}
-#contact-box label{
-  font-size: 1.3rem;
-
+/*Changing the color of placeholder*/
+::placeholder{                  
+    color:rgb(12, 0, 0);
 }
 
 footer{
-    align-items: center;
-    background: black;
-    color: white;
-    padding: 9px 20px;
+        align-items: center;
+        background: black;
+        color: white;
+        padding: 9px 20px;
+        width: 110vw; ;
 }
-
-
-
-/*utility classes*/
-.services h1{
-    color: white;
-}
-.hprimary{
-    color: aqua;
-    font-size: 4.1rem;
-    padding: 44px;
-    width: 40%;
-    border: 2px solid brown;
-}
-.hsecondary{
-    font-size: 1.8rem;
-    padding: 12px;
-}
-.btn{
-    padding: 6px 20px;
-    border: 2px solid white;
-    background-color: rgb(241, 35, 35);
-    color: white;
-
-
-
-    margin: 17px;
-    font-size: 1.3rem;
-    border-radius: 10px;
-    cursor: pointer;
     
-}
-.center{
-    color: blue;
-    text-align: center;
-}
+ /*utility classes*/
+    .services h1{
+        color: white;
+    }
+    .hprimary{
+        color: aqua;
+        font-size: 4.1rem;
+        padding: 44px;
+        width: 40%;
+        border: 2px solid brown;
+    }
+    .hsecondary{
+        font-size: 1.8rem;
+        padding: 12px;
+    }
+    .btn{
+        padding: 6px 20px;
+        border: 2px solid white;
+        background-color: rgb(241, 35, 35);
+        color: white;
+        margin: 17px;
+        font-size: 1.3rem;
+        border-radius: 10px;
+        cursor: pointer;
+        
+    }
+    .center{
+        color: blue;
+        text-align: center;
+    }
+   
+
+
 
