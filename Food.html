@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online food service</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    :Root{
+        --navbar-height : 59px;
+    
+    }
+    #navbar {
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 0px;
+        
+    }
+    #navbar ::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height:100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    
+    #logo{
+        margin: 10px 34x;
+    
+    }
+    #logo img{
+        height: 69px;
+        margin: 3px 6px;
+    
+    }
+    #navbar{
+        position: absolute;
+    }
+    #navbar ul{
+        display: flex;
+    
+    }
+    
+    #navbar ul li{
+        color: aqua;
+        list-style: none;
+        font-size:  1.1rem ; 
+        text-decoration: none;
+    }
+    #navbar ul li a{
+        color: white;
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+        
+    #navbar ul li a:hover{
+        color: black;
+        background-color: white;
+        
+    }
+        /* home section*/
+    #home{
+        display: flex;
+        flex-direction: column;
+       
+        padding: 5px 200px;
+        height: 340px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    #home ::before{
+        content: "";
+        background: url('./bg.jpg') no-repeat center center/cover;
+        
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height:60%;
+        width: 110%;
+        z-index: -1;
+        opacity: 0.89;
+    }
+    #home h1{
+        color: black;
+        text-align: center;
+        
+    }
+    #home p{
+        color: rgb(36, 1, 1);
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    
+    /*services section*/
+    #services{
+        
+        display: flex;
+        color: black;
+        margin: 31px;
+        border-image: auto;
+    }
+    
+    #services.box{
+        
+        padding: 34px ;
+        margin: 3px 6px;
+        border:2px solid  rgb(97, 4, 4);
+        border-radius: 28px solid rgb(99, 3, 3);
+        background:  #dd8f8f;
+        border-image: auto;
+    }
+    #services.box img{
+        height: 160;
+       
+        margin: auto;
+        display: block;
+        border-image: solid;
+    }
+    #services{}
+    #services{}
+    #services{}
+    
+
+/*Designing of Contact Us*/
+#ContactUs{
+    
+    margin: 31px;
+    width: 105vw;
+    height:90vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    font-size: 0.89rem;
+    background: url('../cnt6.jpg') no-repeat center center/cover;
+    border-style: solid; 
+}
+.form-shape input, .form-shape select, .form-shape textarea{
+   width: 92%;
+   padding: 0.5rem;
+}
+/*Changing the color of placeholder*/
+::placeholder{                  
+    color:rgb(12, 0, 0);
+}
+
+footer{
+        align-items: center;
+        background: black;
+        color: white;
+        padding: 9px 20px;
+        width: 110vw; ;
+}
+    
+ /*utility classes*/
+    .services h1{
+        color: white;
+    }
+    .hprimary{
+        color: aqua;
+        font-size: 4.1rem;
+        padding: 44px;
+        width: 40%;
+        border: 2px solid brown;
+    }
+    .hsecondary{
+        font-size: 1.8rem;
+        padding: 12px;
+    }
+    .btn{
+        padding: 6px 20px;
+        border: 2px solid white;
+        background-color: rgb(241, 35, 35);
+        color: white;
+        margin: 17px;
+        font-size: 1.3rem;
+        border-radius: 10px;
+        cursor: pointer;
+        
+    }
+    .center{
+        color: blue;
+        text-align: center;
+    }
+    </style>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jfif" border='1.2' alt="myonlinemeal.com">
+        </div>
+    
+    <ul>
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href ="#">Services</a></li>
+        <li class="item"><a href ="#">About Us</a></li>
+        <li class="item"><a href ="#">Contact us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 >Welcome to Onlinemeal</h1>
+        <p>Are you hungry? </p>
+        <p>Don't wait!!!<br>We are here to serve you!</p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section class="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+            <div id=services> 
+                <div class="box">
+                    <img  src="cfood2.webp"  border='1.8' alt="">
+                    <h2 class="h-secondary center">Food Catering</h2>
+                    <p>Don't wait!!!<br>Let start to oredr food now!</p>
+                </div>
+                <div class="box">
+                    <img src="cjunkfood2.webp"  border='1.2' alt="">
+                    <h2 class="h-secondary center">Bulk Ordering</h2>
+                    <p>We offfer trade prices to our customers with bigger discounts 
+                    available depending on your oredr volume.</p>
+                </div>
+                <div class="box">
+                        <img src="cfd.jpg" border='1.2' alt="">
+                        <h2 class="h-secondary center">Food Ordering</h2>
+                        <p>A moment of delivered on time.</p>
+            </div>
+    </section>
+
+    <div id="ContactUs">
+        <h1>Contact Us</h1>
+        <form action="#">
+            <div class="form-shape">
+                <label for="query">
+                    Type of Query
+                </label>
+                <select name="myQuery" id="query">
+                    <option value="sel" selected>
+                        Select
+                    </option>
+                    <option value="ord">
+                        Order related Issues
+                    </option>
+                    <option value="Site">
+                        Site related Issues
+                    </option>
+                    <option value="fed">
+                        Complaint related Issues
+                    </option>
+                    <option value="others">
+                        Others
+                    </option>
+                </select>
+            </div>
+            <div class="form-shape">
+                <label for="name">Name</label>
+                <input type="text" name="myName" 
+                    id="name" 
+                    placeholder="Enter your Name">
+            </div>
+            <div class="form-shape">
+                <label for="email">Email-Id</label>
+                <input type="email" name="myEmail" 
+                    id="email" 
+                    placeholder="Enter your email">
+            </div>
+            <div class="form-shape">
+                <label for="pho">Phone Number</label>
+                <input maxlength="10"  type="number" name="myPhone" 
+                    id="pho" 
+                    placeholder="Enter your Phone no">
+            </div>
+            <div id="radio">
+                Are you a member of OnlneFoodShop:
+                Yes <input type="radio" name="eligible">
+                No <input type="radio" name="eligible">
+            </div>
+            <div class="form-shape">
+                <label for="message">
+                    Ellaborate your query
+                </label>
+                <textarea name="mesg" id="message" 
+                    cols="30" rows="10">
+                </textarea>
+            </div>
+            <input style="background-color: rgb(250, 250, 71);" type="submit" value="Submit">
+            <input style="background-color: rgb(250, 250, 76);"type="reset" value="Reset">
+        </form>
+    </div>
+
+    
+ <footer>
+     <div style="color: white;" class="center">
+         Copyright &copy; www.Onlinemeal.com.All rights reserved!
+           </div>
+ </footer>
+
+</body>
+</html>
